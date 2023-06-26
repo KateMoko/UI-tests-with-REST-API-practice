@@ -29,7 +29,7 @@ public class LoginTests extends TestBase {
     void loginWithApiTest() {
         step("Get authorization cookie by api and set it to browser", () -> {
             open("/Content/jquery-ui-themes/smoothness/images/ui-bg_flat_75_ffffff_40x100.png");
-            getWebDriver().manage().addCookie(new Cookie(authCookieKey, authApi.getAuthCookie(login, password)));
+            getWebDriver().manage().addCookie(new Cookie(authCookieKey, authApi.getAuthCookieValue(login, password)));
         });
 
         step("Open main page", () ->

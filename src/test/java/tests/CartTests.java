@@ -24,7 +24,7 @@ public class CartTests extends TestBase {
     @Test
     void addItemToCartAsAuthorizedTest() {
         step("Get authorization cookie by api", () -> {
-            authCookieValue = authApi.getAuthCookie(login, password);
+            authCookieValue = authApi.getAuthCookieValue(login, password);
         });
 
         step("Get actual cart size", () -> {

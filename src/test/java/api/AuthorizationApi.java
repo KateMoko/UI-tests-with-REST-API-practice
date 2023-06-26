@@ -7,7 +7,7 @@ public class AuthorizationApi {
 
     public static String authCookieKey = "NOPCOMMERCE.AUTH";
 
-    public String getAuthCookie(String login, String password) {
+    public String getAuthCookieValue(String login, String password) {
         return given(requestSpec)
                 .contentType("application/x-www-form-urlencoded")
                 .formParam("Email", login)

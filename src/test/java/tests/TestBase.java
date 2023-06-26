@@ -21,5 +21,6 @@ public class TestBase {
         Configuration.baseUrl = config.getBaseUrl();
         RestAssured.baseURI = config.getBaseUrl();
         Configuration.browserSize = "1920x1080";
+        Configuration.pageLoadStrategy = "eager";
     }
 }
